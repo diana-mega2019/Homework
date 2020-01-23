@@ -1,17 +1,17 @@
-public class Books{
+public class Book {
     protected String name;
     protected int pages;
 
 
-   public Books(String name, int pages){
+   public Book(String name, int pages){
         this.name = name;
         this.pages = pages;
     }
 
-    public Books() {
+    public Book() {
     }
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 
@@ -29,7 +29,7 @@ public class Books{
 
     @Override
     public String toString() {
-        return "Books{" +
+        return "Book{" +
                 "name='" + name + '\'' +
                 ", pages=" + pages +
                 '}';

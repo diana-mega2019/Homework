@@ -1,8 +1,11 @@
-public class Novels extends Books{
+public class Novel extends Book {
     private String type;
 
-    public Novels(String type){
+    public Novel(String type){
+        super.name = name;
+        super.pages = pages;
         this.type = type;
+
     }
 
     public String getType() {
@@ -15,7 +18,7 @@ public class Novels extends Books{
 
     @Override
     public String toString() {
-        return "Novels{" +
+        return "Novel{" +
                 "type='" + type + '\'' +
                 '}';
     }

@@ -1,7 +1,9 @@
-public class Albums extends Books {
+public class Album extends Book {
     private String papaerquality;
 
-    public Albums(String papaerquality) {
+    public Album(String papaerquality) {
+        super.name = name;
+        super.pages = pages;
         this.papaerquality = papaerquality;
     }
     public String getPapaerquality() {
@@ -14,7 +16,7 @@ public class Albums extends Books {
 
     @Override
     public String toString() {
-        return "Albums{" +
+        return "Album{" +
                 "papaerquality='" + papaerquality + '\'' +
                 '}';
     }

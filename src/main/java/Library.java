@@ -1,24 +1,31 @@
-public class Library {
-    private Books[] books;
+import java.util.Arrays;
 
-    public Library(Books[] books) {
+public class Library {
+    private Book[] books;
+
+    public Library(Book[] books) {
         this.books = books;
     }
 
-    public Books[] getBooks() {
+    public Book[] getBooks() {
         return books;
     }
 
-    public void setBooks(Books[] books) {
+    public void setBooks(Book[] books) {
         this.books = books;
     }
-
-    public void addBooks(Books[] books) {
-        Books[] books1 = new Books[1];
-        Books books1copy[] = new Books[books1.length];
-        System.arraycopy(books1, 0, books1copy, 0, books1.length + 1);
-        books1copy[books1copy.length - 1] = new Books();
+    public static void addBooksInList(Book booksToAdd, Book[] arrayToAddBooks){
+        Book[] newArray = Arrays.copyOf(arrayToAddBooks, arrayToAddBooks.length +1);
+    }
+   // public static void deleteBooksInList(Book[] books, Book bookToDelete){
+       
     }
 
-}
+   // public static void listBooksFromList(Book[] books) {
+    //    for (int i = 0; i <= books.length; i++) {
+      //      System.out.println(books[i]);
+        //}
+    //}
+
+
 
